@@ -1,0 +1,265 @@
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+.container{
+    width: 1336px;
+    margin: auto;
+    display: grid;
+    grid-template-areas: 
+    'nav nav nav nav nav nav'
+    'top top top top top top'
+    'oneHead oneHead oneHead oneHead oneHead oneHead'
+    'oneBody oneBody oneBody oneBody oneBody oneBody'
+    'twoHead twoHead twoHead twoHead twoHead twoHead '
+    'twoBody twoBody twoBody twoBody twoBody twoBody'
+    'threeHead threeHead threeHead threeHead threeHead threeHead'
+    'threeBody threeBody threeBody threeBody threeBody threeBody'
+    'fourHead fourHead fourHead fourHead fourHead fourHead'
+    'fourBody fourBody fourBody fourBody fourBody fourBody'
+    'fiveHead fiveHead fiveHead fiveHead fiveHead fiveHead'
+    'fiveBody fiveBody fiveBody fiveBody fiveBody fiveBody'
+    'sixHead sixHead sixHead sixHead sixHead sixHead'
+    'sixBody sixBody sixBody sixBody sixBody sixBody'
+    'sevenHead sevenHead sevenHead sevenHead sevenHead sevenHead'
+    'sevenBody sevenBody sevenBody sevenBody sevenBody sevenBody'
+    'eightHead eightHead eightHead eightHead eightHead eightHead'
+    'eightBody eightBody eightBody eightBody eightBody eightBody'
+    ;
+    text-align: center;
+}
+
+.nav{
+    grid-area: nav;
+    height: 50px;
+    background-color: rgb(247, 243, 238);
+    box-shadow: 10px 15px 12px rgb(117, 117, 117);
+}
+
+ul{
+    list-style-type: none;
+}
+li{
+    display: inline;
+    font-family: 'Archivo Black', sans-serif;
+    padding: 7px;
+}
+.top{
+    grid-area: top;
+    background-color: black;
+    height: 780px;
+    margin-top: 30px;
+    box-shadow: 10px 15px 12px rgb(117, 117, 117);
+}
+#top{
+    width: 1000px;
+    height: 768px;
+}
+.oneHead{
+    grid-area: oneHead;
+    background-color: rgb(190, 40, 40);
+    height: 100px;
+    margin-top: 25px;      
+           
+}
+#temp{
+    color: white;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 75px;
+    position: relative;
+    bottom: 75px;
+}   
+   
+.oneBody{
+    grid-area: oneBody;
+    height: 740px; 
+    overflow-y: scroll;     
+   
+}
+#fash{
+    height: 720px;
+    width: 1336px;
+    box-shadow: 10px 15px 12px rgb(117, 117, 117);
+}
+.temp{
+    height: 720px;
+    width: 1336px;
+}
+.twoHead{
+    grid-area: twoHead;
+    background-color: rgb(177, 49, 113);
+    height: 100px;
+    margin-top: -25px;    
+}
+#pro{
+    color: white;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 75px;
+    position: relative;
+    bottom: 75px;
+
+}   
+.twoBody{
+    grid-area: twoBody;
+    height: 740px;
+    overflow: scroll;
+       
+}
+#hair{
+    height: 720px;
+    width: 1336px;
+    box-shadow: 10px 10px 12px rgb(117, 117, 117);
+}
+
+.pro{
+    height: 720px;
+    width: 1336px;
+}
+.threeHead{
+    grid-area: threeHead;
+    background-color: rgb(19, 2, 2);
+    height: 100px;
+    margin-top: -60px;
+    box-shadow: 10px 15px 12px rgb(117, 117, 117);
+}
+#code{
+    color: white;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 75px;
+    position: relative;
+    bottom:75px;
+}   
+.threeBody{
+    grid-area: threeBody;
+    height: 720px;
+    margin-top: 8px;
+   
+}
+#flex{
+    height: 720px;
+    width: 1336px;
+    box-shadow: 10px 15px 12px rgb(117, 117, 117);
+}
+.fourHead{
+    grid-area: fourHead;
+    background-color: rgb(252, 252, 252);
+    height: 100px;
+    margin-top: -65px;
+  
+    
+}
+#dig{
+    color: rgb(0, 0, 0);
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 75px;
+    position: relative;
+    bottom:4px;
+}   
+.fourBody{
+    grid-area: fourBody;
+    height: 720px;
+    box-shadow: 10px 15px 12px rgb(117, 117, 117);
+    overflow-y: scroll;
+   
+}
+#view{
+    height: 720px;
+    width: 1000px;
+}
+.art{
+    height: 720px;
+    width: 1336px;
+}
+.fiveHead{
+    grid-area: fiveHead;
+    background-color: rgb(235, 118, 10);
+    height: 100px;
+    margin-top: -65px;
+   
+}
+#motion{
+    color: rgb(0, 0, 0);
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 75px;
+    position: relative;
+    bottom:4px;
+}
+.fiveBody{
+    grid-area: fiveBody;
+    height: 720px;
+    box-shadow: 10px 15px 12px rgb(117, 117, 117);
+}
+#bx{
+    height: 768px;
+    width: 1336px;
+}
+.sixHead{
+    grid-area: sixHead;
+    background-color: rgb(110, 15, 15);
+    height: 100px;
+    margin-top: -65px;
+    
+}
+#threeD{
+    color: rgb(255, 255, 255);
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 75px;
+    position: relative;
+    bottom:4px;
+}
+.sixBody{
+    grid-area: sixBody;
+    height: 720px;
+    box-shadow: 10px 15px 12px rgb(117, 117, 117);
+}
+#pink{
+    height: 768px;
+    width: 1336px;
+}
+.sevenHead{
+    grid-area: sevenHead;
+    background-color: rgb(189, 128, 175);
+    height: 100px;
+    margin-top: -65px;
+   
+}
+#time{
+    color: rgb(255, 255, 255);
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 75px;
+    position: relative;
+    bottom:4px;
+}
+.sevenBody{
+    grid-area: sevenBody;
+    background-color: rgb(240, 195, 216);
+    height: 720px;
+    box-shadow: 10px 15px 12px rgb(117, 117, 117);
+}
+#dave{
+    position: relative;
+    bottom: 65px;
+}
+.eightHead{
+    grid-area: eightHead;
+    background-color: rgb(124, 183, 238);
+    height: 100px;
+    margin-top: -105px;
+   
+}
+#assets{
+    color: rgb(255, 255, 255);
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 75px;
+    position: relative;
+    bottom:4px;
+}
+.eightBody{
+    grid-area: eightBody;
+    height: 720px;
+    box-shadow: 10px 15px 12px rgb(117, 117, 117);
+}
+#landing{
+    height: 768px;
+    width: 1336px;
+}

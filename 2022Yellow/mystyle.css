@@ -1,0 +1,113 @@
+
+
+        * {
+            padding: 0px;
+            margin: 0px;
+          
+        }
+        body {
+            background-color: rgb(17, 17, 17);
+           /*background:rgb(252, 206, 4);*/
+          
+           background-blend-mode: soft-light;
+
+        }
+       .container {
+           margin: auto;                  
+           margin-top: 100px;
+           left: 250px;
+           bottom: 80px;          
+           background-attachment: center;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           flex-direction: column;
+         
+       }
+        .container h1 span {
+           text-align:left;
+           position: relative;
+           line-height: .75em;
+           color:rgb(29, 29, 29);
+          /* color: rgb(252, 206, 4);*/        
+           font-family: 'Orbitron', sans-serif;
+           font-size: 90px;
+           padding: 0px;
+       }
+  
+       .countdown {
+           display: flex;
+        
+       }
+       .countdown div {
+           position: relative;
+           left: -64px;
+           width: 50px;
+           height: 80px;
+           line-height: 80px;
+           text-align: center;
+           margin: 25px 1px;
+           padding: 10px;
+           font-size: 2em;
+           font-weight: 100;
+           font-family: 'Orbitron', sans-serif;
+           color: rgb(252, 248, 248);
+         
+       }
+       .countdown div:before {
+           content: '';
+           position:absolute;
+           bottom: -10px;
+           left: 0;
+           width:100%;
+           height: 35px;
+           
+           color: rgb(209, 209, 209);
+           line-height: 35px;
+           font-size: small;
+           font-family: 'Orbitron', sans-serif;
+        
+       }
+       .launch{
+           position: relative;
+           color:rgb(41, 40, 40);
+           left: -105px;
+           top: 25px;
+           font-family: 'Orbitron', sans-serif;
+       }
+     
+    .uxDesign{
+        margin-right: 10%;
+    }
+       .countdown div#day:before {
+           content: "Days"
+       }
+       .countdown div#hour:before {
+           content: "Hours"
+       }
+       .countdown div#minute:before {
+           content: "Minutes"
+       }
+       .countdown div#second:before {
+           content: "Seconds"
+       }
+
+       @media only screen and (max-width:1280px){
+        .container {
+            padding: 0px;
+            margin: 0px;
+           width: 1280px;
+           height: 720px;         
+           position: absolute;
+           top: 0px;
+           left: 0px;        
+           bottom: 0px;          
+         }
+         .countdown div:before{
+            bottom: -10px;
+         }
+                
+       }
+
+      
+   
