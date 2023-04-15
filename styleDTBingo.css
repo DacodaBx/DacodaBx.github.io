@@ -1,0 +1,343 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;    
+    background-color:rgb(255, 255, 255);
+    width: 100vw;
+}
+
+aside{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  padding: 100px 0px;
+  margin: auto;
+  text-align: center;
+  width: 700px;
+  height:fit-content;   
+}
+
+li{
+  line-height: 2em;
+  color: rgb(72, 70, 70);
+}
+ol{
+  font-size: 1.5em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+img {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+#starContainer1{
+  display: flex;
+  flex-direction: row;
+}
+#starContainer2{
+  display: flex;
+  flex-direction: row;
+}
+#star{
+  width: 7%;
+}
+#trump{  
+  margin-bottom: -50px;
+  text-align: center;
+  background-color: rgb(6, 6, 6);
+  color: rgb(255, 255, 255);
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 50px;
+  font-size: 4em;  
+}
+#indict{
+  margin-top: 55px;
+  text-align: center;
+  background-color: rgb(251, 247, 247);
+  border: 2px solid black;
+  color:rgb(3, 0, 0);
+  letter-spacing: 1em;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2em;  
+}
+#bingo{  
+  
+  color: rgb(51, 45, 45);
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: .15em; 
+  font-size: 7em;
+}
+
+#free{
+  margin: auto;
+  margin-top: 15px;  
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.25em;
+  padding-bottom: 10px;
+}
+#save{ 
+  position: relative;
+   
+}
+#getFour{
+  font-size: 8em;
+}
+#youWin{
+  font-size: 5em;
+  color: rgb(19, 18, 18);
+  line-height: 1.5em;
+  font-family: 'Cantarell', sans-serif;
+}
+#save{
+  margin: auto;
+}
+#github{
+  text-decoration: none;
+}
+#github:link {
+  color: rgb(12, 0, 0);
+}  
+#github:visited {
+  color: rgb(19, 19, 19);
+}
+#github:hover {
+  color: hotpink;
+}
+#github:active{
+  color:rgb(227, 153, 153);
+} 
+#getFour:hover {
+  color: hotpink;
+}
+.playButton{
+  background-color: rgb(234, 8, 87);
+  padding: 5px;
+  border: none;
+  border-radius: 25px;
+}
+.playButton2{
+  
+  padding: 3px;
+  font-size: 2em;
+  font-family: 'Bebas Neue', cursive;
+  color: azure;
+  outline: 0px solid transparent;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.playButton2:link {
+  color: rgb(198, 226, 228);
+}
+.playButton2:visited {
+  color: rgb(217, 221, 217);
+}
+.playButton2:hover {
+  color: rgb(244, 248, 13);
+}
+.playButton2:active {
+  color: rgb(255, 255, 248);
+}
+.wrapper{  
+  margin: auto;  
+  display: flex;
+  flex-direction: column;  
+  background-color: transparent;
+  font-family: 'Bebas Neue', cursive; 
+}
+.directions{ 
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin: auto;  
+  background-color:transparent;   
+}
+.demo {
+    vertical-align: middle;
+  }   
+.containerBingo {
+    position: relative; 
+    width: 800px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: transparent;
+  }
+.myBingo {
+    display: none;       
+  } 
+.cursor {
+    cursor: pointer;
+  }  
+  
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: rgb(6, 6, 0);
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  } 
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+    
+.prev:hover,
+.next:hover {
+    background-color: rgba(10, 119, 243, 0.8);
+  }      
+.caption-container {
+    text-align: center;
+    background-color: transparent;
+    padding: 2px 16px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.5rem;
+    padding: .5rem;
+    color: rgb(9, 3, 3);
+  }
+.row{
+    padding-bottom: 1rem;
+    margin-left: 115px;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }    
+.column {
+    float: left;
+    width: 16.66%;
+  }
+  
+.demo {
+    opacity: 0.6;
+  }  
+.active,
+.demo:hover {
+  opacity: 1;
+  }
+
+/* RWD */
+
+@media only screen and (max-width: 810px){
+.directions{
+  font-size: smaller;
+}
+}
+@media only screen and (max-width: 428px){
+  aside{
+    width: 100vw;
+    background-color: antiquewhite;
+  }
+  #trump{
+    letter-spacing: 35px;
+    padding-left: 25px;
+  }
+  #indict{
+    font-size: 1em;
+  }
+  .wrapper{
+    padding-top: 5px;
+  }
+  .containerBingo{
+    width: 100vw;
+  }
+  .directions{
+    background-color: antiquewhite;
+    width: 100vw;
+    padding: 15px;   
+  }
+  .row{
+   margin-right: 90px;
+  }
+  #getFour{
+    font-size:6em;
+  }
+  ol{
+    padding-left: 15px;
+  }
+  li{
+    font-size: 15px;   
+  }
+  #youWin{
+    font-size: 2em;
+    padding-left: 40px;
+    padding-top: 15px;
+  }
+}
+@media only screen and (max-width: 414px){
+  #starContainer1{
+    padding-top: 20px;
+  }
+  aside{
+    background-color: transparent;
+    width: fit-content;
+    padding: 25px 0px;
+  }
+  #play{
+    padding: 4px 0px;
+  }
+  #trump{
+    font-size: 2em;
+    padding-left: 40px;
+  }
+  #indict{
+    font-size: 1em;
+  }
+  #bingo{
+    font-size: 6em;
+  }
+  .containerBingo{
+    width: 100vw;
+  }
+  .row{
+   margin-left: 6.5em;
+  }
+  .directions{
+    background-color: transparent;
+  }
+ #getFour{
+  font-size: 6em;
+ }
+ li{
+  font-size: 15px;
+ }
+ #youWin{
+  font-size: 2em;
+  padding-top: 7px;
+ }
+ #play{
+  padding-top: 50px;
+ }
+}
+@media only screen and (max-width: 360px){
+  aside{
+    padding: 25px 0px;
+  }
+  #trump{
+   margin-left: 4.7px;
+   width: 90vw;
+   letter-spacing: 30px;
+  }
+  #play{
+    padding: 25px 0;
+  }
+  .directions{
+    padding: 40px 10px;
+  }
+ 
+}
