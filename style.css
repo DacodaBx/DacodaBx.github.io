@@ -1,0 +1,79 @@
+.containerPredictions{
+    height: 950px;
+    display: flex;   
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-image: url('TrumpPredictionGraphic.png');
+}
+.quote-container{
+    width: auto;
+    margin-top: 25rem;
+    max-width: 900px;
+    padding: 20px 30px;
+    border-radius: 10px;
+    background-color: rgb(253, 253, 253);
+    box-shadow: 0 10px 10px black;
+}
+.quote-text{
+    font-size: 2.25rem;
+    font-family: 'Sigmar', cursive;
+}
+.long-quote{
+    font-size: 2rem;
+}
+.fa-quote-left{
+    font-size: 4rem;
+}
+.quote-author{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 1.75rem;
+    font-weight: 400;
+    color:#242222;
+    font-family: 'Roboto', sans-serif;
+}
+button{
+    cursor: pointer;
+    height: 2rem;
+    font-size: 1rem;
+    color:white;
+    background-color: #333;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 0.5rem 1.8rem;
+    box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
+}
+button:hover{
+    filter: brightness(115%);
+}
+button:active{
+    transform: translate(0, 0.3);
+    box-shadow: 0 0.1rem rgba(255,255,255, 0.65);
+}
+.button-container{
+    display: flex;
+    justify-content: space-between;
+}
+.twitter-button:hover{
+    color: #38a1f3;    
+}
+.fa-twitter{
+    font-size: 1rem;
+}
+/* RWD */
+@media only screen and (max-width:550px){
+    .quote-container{
+        margin-top: 15rem;
+    } 
+    .quote-text{
+        font-size: 2rem;
+        
+    }
+    .quote-author{
+        font-size: 1rem;
+        
+    }
+}
+    
