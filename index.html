@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleDTBingo.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f946327a4a.js" crossorigin="anonymous"></script>
+    <title>Trump Indictment Bingo</title>
+</head>
+
+<body>
+  <div id="starContainer1">
+    <img id="star" src="starRed.png" alt="star">
+    <img id="star" src="starRed.png" alt="star">
+    <img id="star" src="starRed.png" alt="star">
+    <img id="star" src="starRed.png" alt="star">
+    <img id="star" src="starRed.png" alt="star">
+ </div>
+ 
+<aside>
+ 
+ <div id="trump">
+  <h1>TRUMP</h1>
+ </div>
+ <div id="indict">
+  <h2>INDICTMENT</h2>
+ </div>
+ <div id="bingo">
+  <h3>BING-O</h3>
+ </div>
+ <div id="play">
+  <button class="playButton">
+    <a class="playButton2" href="#getFour">
+     PLAY TODAY!
+    </a>
+  </button>
+ </div>
+</aside> 
+
+<div class="wrapper">  
+  <div class="containerBingo">  
+    <div class="myBingo">    
+      <img src="Artboard 1.jpg" style="width:65%" alt="bingo card">
+    </div>
+    <div class="myBingo">    
+     <img src="Artboard 2.jpg" style="width:65%" alt="bingo card">
+    </div>
+    <div class="myBingo">    
+      <img src="Artboard 3.jpg" style="width:65%" alt="bingo card">
+    </div>    
+    <div class="myBingo">
+      <img src="Artboard 4.jpg" style="width:65%" alt="bingo card">
+    </div>
+    <div class="myBingo">  
+      <img src="Artboard 5.jpg" style="width:65%" alt="bingo card">
+    </div>   
+     
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+        <img class="demo cursor" src="Artboard 1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Card 1">
+      </div>    
+    <div class="column">
+      <img class="demo cursor" src="Artboard 2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Card 2">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Artboard 3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Card 3">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Artboard 4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Card 4">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Artboard 5.jpg"  style="width:100%" onclick="currentSlide(5)" alt="Card 5">
+    </div>  
+  </div>
+  
+</div>
+  <div class="directions">
+    <p id="save">Save Image<br>Print Image </p>
+    <div id="free">
+      <h5><a id="github" href="https://github.com/DacodaBx" target="_blank">FREE DOWNLOAD</a></h5>
+    </div>
+    <h1 id="getFour">GET<br>FOUR<br> IN A ROW</h1>
+    <ol>
+      <li>WATCH, LISTEN AND OR READ THE NEWS</li>
+      <li>LOOK FOR PREDICTIONS ON YOUR CARD</li>
+      <li>ONCE YOU HAVE FOUR IN A ROW, YOU WIN!</li>     
+    </ol>
+    <h2 id="youWin">YOU WON "BIGLY"!</h2>
+    
+  </div>
+  
+ 
+  <div id="starContainer2">
+    <img id="star" src="starRed.png" alt="star">
+    <img id="star" src="starRed.png" alt="star">
+    <img id="star" src="starRed.png" alt="star">
+    <img id="star" src="starRed.png" alt="star">
+    <img id="star" src="starRed.png" alt="star">
+  </div>
+
+</div>
+
+ <!--Predictions-->
+<div class="containerPredictions">
+
+ <div class="quote-container" id="quote-container">
+  <!-- Author1 -->
+  <div class="quote-author">
+    <span id="author"></span>
+</div>
+  <!-- Predictions -->
+      <div class="quote-text">
+          <span id="quote"></span>
+      </div>  
+  <!-- Author2 -->
+      <div class="quote-author">
+          <span id="author2"></span>
+      </div>
+  <!-- Buttons -->
+      <div class="button-container">
+          <button class="twitter-button" id="twitter" title="Tweet This Shit">
+              <i class="fab fa-twitter"></i>
+          </button>
+          <button id="new-quote" title="Generate New Prediction">New Prediction</button>
+      </div>
+
+  </div>
+
+</div>
+    <script src="dtbingo.js"></script>
+    <script src="quotes.js"></script>
+    <script src="script.js"></script>
+
+
+</body>
+</html>
